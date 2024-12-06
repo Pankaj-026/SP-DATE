@@ -10,13 +10,22 @@
 
 :root {
     /* Colors */
+    /* ocean */
+    /* --first-color: #5ce1ed;
+    --header-color: #00098a;
+    --body-color: #2274A5;
+    --yes-color: #00ae74;
+    --no-color: #ff0000;
+    --box-text-color: #fff1e5; */
+
+    /* rose */
+    
     --first-color: #D1858F;
     --header-color: #4C0519;
     --body-color: #831843;
     --yes-color: #042F2E;
     --no-color: #B91C1C;
     --box-text-color: #DEBDA1;
-    --first-text-color: #5D1628;
 
     /* Font Size */
     --header-font-size: 1.8rem;
@@ -70,6 +79,10 @@ main {
     font-weight: var(--font-semi-bold);
     border: 1px solid var(--box-text-color);
 
+}
+
+.love__confession{
+    color: var(--body-color);
 }
 
 .Teddy {
