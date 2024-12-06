@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "Love Ya Like A Sister", cursive; */
+    font-family: sans-serif;
+}
+
+:root {
+    /* Colors */
+    --first-color: #D1858F;
+    --header-color: #4C0519;
+    --body-color: #831843;
+    --yes-color: #042F2E;
+    --no-color: #B91C1C;
+    --box-text-color: #DEBDA1;
+    --first-text-color: #5D1628;
+
+    /* Font Size */
+    --header-font-size: 1.8rem;
+    --Confession-font-size: 1.1rem;
+
+    /* Font Weigth */
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+}
+
+/* ============================= Header ============================= */
+header {
+    height: 10vh;
+    background-color: var(--header-color);
+    color: var(--box-text-color);
+    font-weight: var(--font-semi-bold);
+    font-size: var(--header-font-size);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Love__Head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ============================= MAIN ============================= */
+main {
+    background-color: var(--body-color);
+    padding-inline: 1rem;
+    height: calc(100vh - 10vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.love__container {
+    background-color: var(--first-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 2rem;
+    font-size: var(--Confession-font-size);
+    font-weight: var(--font-semi-bold);
+    border: 1px solid var(--box-text-color);
+    min-width: 280px;
+}
+
+.Teddy {
+    height: 150px;
+    margin: 1rem 0 0 0;
+}
+
+.Her__Feeling__For__ME {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    margin-top: 1.5rem;
+}
+
+
+.Her__Feeling__For__ME div {
+    border: 1px solid var(--body-color);
+    color: var(--body-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem .5rem;
+}
+
+.yes:hover {
+    background-color: var(--yes-color);
+    color: var(--box-text-color);
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.no:hover {
+    background-color: var(--no-color);
+    color: var(--box-text-color);
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.yes__img,
+.no__img {
+    height: 3rem;
+}
+
+.no__replies {
+    background-color: var(--body-color);
+    color: var(--box-text-color);
+    border: 1px solid var(--box-text-color);
+    padding: .5rem 1rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+/* What if YES */
+.she-said-yes {
+    background-color: var(--body-color);
+    color: var(--box-text-color);
+    border: 1px solid var(--box-text-color);
+    position: absolute;
+    width: 270px;
+    top: -100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 40vh;
+}
+
+.close {
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    cursor: pointer;
+}
+
+.she-said-yes-add {
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (min-width: 450px) {
+    .love__confession {
+        font-size: 1.5rem;
+    }
+
+    :root {
+        /* Font Size */
+        --header-font-size: 1.8rem;
+        --Confession-font-size: 1.3rem;
+    }
+
+    .love__container {
+        min-width: 400px;
+    }
+
+}
+
+@media (min-width: 1001px) {
+    :root {
+        /* Font Size */
+        --header-font-size: 2rem;
+        --Confession-font-size: 1.2rem;
+    }
+
+    .love__confession {
+        font-size: 1.6rem;
+    }
+
+    .love__container {
+        min-width: 500px;
+    }
+}
