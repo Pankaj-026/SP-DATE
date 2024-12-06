@@ -63,13 +63,13 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5rem 5rem;
+    padding: 5rem 1rem;
     min-width: 300px;
     margin-inline: 1rem;
     font-size: var(--Confession-font-size);
     font-weight: var(--font-semi-bold);
     border: 1px solid var(--box-text-color);
-    
+
 }
 
 .Teddy {
